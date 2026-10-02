@@ -7,7 +7,9 @@ const userRoutes = require("./routes/userRoutes");
 const ownerRoutes = require("./routes/ownerRoutes");
 
 const app = express();
-
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
 app.use(cors());
 app.use(express.json());
 
