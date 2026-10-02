@@ -1,6 +1,11 @@
 require("dotenv").config();
 
 const app = require("./app");
+
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
 const prisma = require("./config/prisma");
 
 const PORT = process.env.PORT || 5000;
