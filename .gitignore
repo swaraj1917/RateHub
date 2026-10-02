@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Local AI/editor configuration
+.agents/
+.claude/
+.windsurf/
+
+# Prisma generated client
+backend/src/generated/prisma/
+
+# Local Prisma skill configuration
+backend/skills-lock.json

@@ -1,0 +1,20 @@
+# Render Blueprint: deploys the API from /backend.
+# Create a Postgres database first (Neon is recommended on a free plan) and paste its URL when asked.
+services:
+  - type: web
+    name: ratehub-api
+    runtime: node
+    rootDir: backend
+    plan: free
+    buildCommand: npm run render-build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
