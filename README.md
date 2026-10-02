@@ -8,6 +8,23 @@ Built for the **FullStack Intern Coding Challenge**.
 
 ---
 
+## 🚀 Live Demo
+
+**[Open RateHub](https://rate-hub-peach.vercel.app/login)**
+
+> The application is deployed and available for live testing.
+
+### 🔑 Demo Accounts
+
+| Role | Email | Password |
+| --- | --- | --- |
+| 🛡️ Administrator | `admin@ratehub.local` | `Admin@123` |
+| 🏪 Store Owner | `storeowner@ratehub.local` | `Owner@123` |
+
+**Normal User:** Create an account using the **Sign Up** option.
+
+---
+
 ## 📸 Overview
 
 RateHub is a role-based store rating application with three types of users:
